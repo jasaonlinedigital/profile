@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Profil atas nama Kristian Irwanto (Jasa Online Digital) menyangkut pemnbuatan aplikasi web / mobile. Pembuatan ini terkait akun Google ( Sheets, Docs, Apps Script, Drive dsj ), HTML, CSS, Javascript dan sejenisnya.">
+    <meta name="keywords" content="blog, vlog, online, google sheets, google docs, google apps script, google drive, html, css, javascript, aplikasi, web, mobile">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="N/A">
+    <meta name="author" content="Kristian Irwanto, support@kristianirwanto.tk">	
+	<!-- Your app title -->
+	<title>Profile Page</title>
+	<!-- Path to your custom app styles-->
+	<link rel="stylesheet" type="text/css" href="./css/output.css" media="screen" />
+	<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet" type="text/css"> </head>
+<style type="text/css">
+#content {
+	top: 0;
+	transform: translateY(0%);
+}
+
+#content h1 {
+	margin: 30px 0 0 0;
+	padding: 0;
+	font-size: 30px;
+}
+
+#content a {
+	display: block;
+	font-size: 26px;
+}
+
+#demo_left,
+#demo_front,
+#demo_right {
+	display: inline-block;
+	margin: 20px;
+}
+</style>
+
+<body>
+	<div id="content">
+		<div id="demo">
+			<h1>Jasa Online Digital</h1> <a href="https://www.kristianirwanto.tk" title="Author">www.kristianirwanto.tk</a>
+			<div id="demo_left"></div>
+			<div id="demo_front"></div>
+			<div id="demo_right"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/output.js"></script>
+	<!-- Path to your app js-->
+	<script type="text/javascript">
+	// Block
+	document.addEventListener('contextmenu', event => event.preventDefault());
+	window.addEventListener('DOMContentLoaded', function() {
+		// Left facing
+		bioMp(document.getElementById('demo_left'), {
+			url: 'https://www.kristianirwanto.tk',
+			view: 'left',
+			image: 'http://beeker.io/images/posts/3/iphone6_side_left_gold.png',
+			scale: 0.7
+		});
+		// Front facing
+		bioMp(document.getElementById('demo_front'), {
+			url: 'https://koperasi.kristianirwanto.tk',
+			view: 'front',
+			image: 'http://beeker.io/images/posts/3/iphone6_front_black.png',
+			scale: 0.7
+		});
+		// Right facing
+		bioMp(document.getElementById('demo_right'), {
+			url: 'https://aplikasidemo.kristianirwanto.tk',
+			view: 'right',
+			image: 'http://beeker.io/images/posts/3/iphone6_side_right_gold.png',
+			scale: 0.7
+		});
+	});
+	</script>
+</body>
+
+</html>
